@@ -1,96 +1,20 @@
-# 🍽️ Food Review Analysis Platform
-A dynamic Streamlit-based text analysis system that allows users to upload or paste reviews, then performs:
-- 📊 Sentiment Analysis (positive/negative with charts)
-- ☁️ Topic Modeling (dominant keywords + wordcloud)
-- 📝 Summarization (abstractive summary of the review)
-- 📄 One‑click DOCX Report (mirrors UI visuals)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/temp/2
+
+## Run Locally
+
+**Prerequisites:**  Node.js
 
 
-## 🚀 Features
-- Upload `.txt`, `.csv`, `.docx` files or paste text directly
-- Sentiment analysis with **gauge + bar chart (with % labels)**
-- Dominant topic keywords with **wordcloud visualization**
-- Abstractive summary using transformer models
-- Insights + recommendations generated automatically
-- Downloadable DOCX report (summary, sentiment chart, wordcloud, dominant keywords, insights, recommendations)
-
----
-**UI Overview**
-![UI Overview](text_analysis_platform/assets/ui_overview.png)
-**Sentiment Analysis**
-![Sentiment Analysis](text_analysis_platform/assets/sentiment_ui.png)
-**Topic modeling**
-![Topic Modeling](text_analysis_platform/assets/topic_modeling_ui.png)
-**Summary and Insights**
-![Summary and Insights](text_analysis_platform/assets/summary_insights_ui.png)
-
-## 📖 Usage
-- Upload a file or paste text in the input box.
-- Click 🚀 Analyze Text.
-- Explore results in tabs:
-- ❤️ Sentiment Analysis
-- ☁️ Topic Analysis
-- 📝 Summary & Insights
-- 📄 Report
-- Download the DOCX report.
-
----           
-
-## 📂 Project Structure
-
-```text
-text_analysis_platform/
-├── app.py                     # Main Streamlit dashboard
-├── reporting.py         
-├── summarizer.py              # NLP Summarization models     
-├── validation.py              # Input data validation
-├── sentiment_analysis.ipynb
-├── assets/                    # Images for documentation
-├── requirements.txt           # Project dependencies
-└── topic_modeling.ipynb    
-```   
-    
-
-# 🛠️ Installation & Setup
-Follow these steps to run the project locally:
-
-### 1. Clone the repository
-```bash
-git clone [https://github.com/springboard5678x/Dynamic-Text-Analysis-System_Batch_27_nov.git](https://github.com/springboard5678x/Dynamic-Text-Analysis-System_Batch_27_nov.git)
-cd Dynamic-Text-Analysis-System_Batch_27_nov
-```
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-3. Download NLP Models
-```bash
-# Download spaCy model
-python -m spacy download en_core_web_sm
-# Download nltk data
-python -c "import nltk; nltk.download('stopwords')"
-```
-
-▶️ Run the App
-Launch the dashboard using Streamlit:
-```bash
-streamlit run app.py
-```
-## 🤝 Contributing
-1. Fork the Project.
-2. Create a Feature Branch:
-```bash
-git checkout -b feature/AmazingFeature
-```
-3. Commit your Changes:
-```bash
-git commit -m 'Add some AmazingFeature'
-```
-4. Push to the Branch:
-```bash
-git push origin feature/AmazingFeature
-```
-5. Open a Pull Request.
-
-## 📝 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
